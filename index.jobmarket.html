@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kiran Modi — Ph.D. Candidate in Finance</title>
+  <meta name="description" content="Kiran Modi — Ph.D. candidate in Finance at the University of North Texas. Corporate governance, ownership, ESG.">
+  <style>
+    :root { --bg:#0b0c10; --card:#121318; --text:#f2f5f7; --muted:#c9d1d9; --accent:#4ea8de; --border:#1f222a; }
+    * { box-sizing:border-box }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.55 }
+    a { color:#7cc6ff; text-decoration:none } a:hover{ text-decoration:underline }
+    .container{ max-width:980px; margin:0 auto; padding:24px }
+    header{ display:grid; grid-template-columns:140px 1fr; gap:24px; align-items:center; background:var(--card); border:1px solid var(--border); border-radius:16px; padding:20px }
+    header img{ width:140px; height:140px; border-radius:14px; object-fit:cover; border:1px solid var(--border) }
+    h1{ margin:0 0 6px 0; font-size:28px }
+    .tagline{ color:var(--muted); margin-bottom:10px }
+    .chips{ display:flex; flex-wrap:wrap; gap:8px; margin:8px 0 12px }
+    .chip{ padding:6px 10px; background:#0e1116; border:1px solid var(--border); border-radius:999px; font-size:12px; color:var(--muted) }
+    .btn{ display:inline-block; padding:10px 14px; background:var(--accent); color:#001018; border-radius:10px; font-weight:600 }
+    nav{ position:sticky; top:0; backdrop-filter:blur(6px); background:rgba(11,12,16,.6); border-bottom:1px solid var(--border) }
+    nav .container{ display:flex; gap:16px; overflow:auto }
+    nav a{ padding:12px 8px; display:block; color:var(--muted) } nav a:hover{ color:var(--text) }
+    section{ background:var(--card); border:1px solid var(--border); border-radius:16px; padding:20px; margin:18px 0 }
+    section h2{ margin:0 0 6px; font-size:22px }
+    .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:18px }
+    footer{ color:var(--muted); text-align:center; padding:22px 0 }
+    @media (max-width:720px){ header{ grid-template-columns:1fr; text-align:center } header img{ margin:0 auto } .two-col{ grid-template-columns:1fr } }
+    .small{ color:var(--muted); font-size:14px }
+    .pub{ margin-bottom:12px } .pub .title{ font-weight:600 } .pub .meta{ color:var(--muted); font-size:14px }
+    .kicker{ color:var(--accent); font-weight:600; font-size:12px; letter-spacing:.08em; text-transform:uppercase }
+    .list-plain{ list-style:none; padding:0; margin:0 } .list-plain li{ margin:8px 0 }
+    .pill-links a{ display:inline-block; margin-right:10px; margin-bottom:8px; padding:8px 10px; border:1px solid var(--border); border-radius:999px; background:#0e1116 }
+  </style>
+</head>
+<body>
+  <div class="container" id="top">
+    <header>
+      <img src="assets/headshot.jpg" alt="Headshot of Kiran Modi">
+      <div>
+        <h1>Kiran Modi</h1>
+        <div class="tagline">Ph.D. Candidate in Finance · University of North Texas</div>
+        <div class="chips">
+          <span class="chip">Corporate Governance</span>
+          <span class="chip">Ownership Structure</span>
+          <span class="chip">Agency Conflicts</span>
+          <span class="chip">ESG Integration</span>
+        </div>
+        <div class="actions pill-links">
+          <a class="btn" href="files/CV-Modi.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+          <a href="files/Research_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Research Statement</a>
+          <a href="files/Teaching_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Teaching Statement</a>
+          <a href="mailto:kiran.modi@unt.edu">kiran.modi@unt.edu</a>
+          <a href="tel:+12244102188">+1‑224‑410‑2188</a>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <nav>
+    <div class="container">
+      <a href="#about">About</a><a href="#research">Research</a><a href="#papers">Job Market Paper</a><a href="#wip">Work in Process</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="about">
+      <div class="kicker">About</div>
+      <h2>Short Bio</h2>
+      <p>Kiran Modi is a Ph.D. candidate in Finance at the University of North Texas, specializing in corporate governance, agency conflicts, ownership structure, and ESG integration. Her research examines how institutional ownership and sustainability considerations affect firm value, combining empirical corporate finance with modern data engineering and NLP methods. She has received multiple Best Research Paper Awards and Outstanding Student Awards at UNT. Kiran has taught Introduction to Finance and assisted in graduate and undergraduate finance courses, alongside her active research contributions.</p>
+    </section>
+
+    <section id="research">
+      <div class="kicker">Research</div>
+      <h2>Interests & Approach</h2>
+      <ul>
+        <li>Corporate governance, ownership, and agency conflicts.</li>
+        <li>ESG integration and investor behavior/firm value.</li>
+        <li>Empirical designs: PSM, DiD, legal shocks.</li>
+        <li>Data engineering & NLP for finance text/contract analysis.</li>
+      </ul>
+      <p class="small pill-links"><a href="files/Research_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Full Research Statement</a></p>
+    </section>
+
+    <section id="papers">
+      <div class="kicker">Job Market Paper</div>
+      <h2>ESG Ratings, Ownership Structure, and Firm Value</h2>
+      <p class="small">Examines whether changes in ESG ratings drive shifts in institutional ownership and market valuation. Identifies effects around rating upgrades/downgrades, index-threshold crossings, and ETF additions/removals; uses propensity‑score matching and dynamic difference‑in‑differences.</p>
+      <p class="small pill-links"><a href="files/CV-Modi.pdf" target="_blank" rel="noopener">See CV for details</a></p>
+    </section>
+
+    <section id="wip">
+      <div class="kicker">Work in Process</div>
+      <ul>
+        <li><strong>ESG Ratings & Ownership Structure and Value: Cross‑Country Evidence</strong> — International extension across regulatory settings.</li>
+        <li><strong>Governance by Contract: Shareholder Agreements & Corporate Control</strong> — SEC contract retrieval with LLM clause extraction; outcomes around legal shocks.</li>
+      </ul>
+    </section>
+
+    <section id="teaching">
+      <div class="kicker">Teaching</div>
+      <h2>Courses</h2>
+      <ul>
+        <li><strong>Introduction to Finance (FINA 3770)</strong> — Instructor (2024–Present). Teaching evaluation: <strong>3.50 / 5.00</strong>.</li>
+        <li>TA experience: FINA 3770, FINA 5170, FINA 4300.</li>
+      </ul>
+      <p class="small pill-links"><a href="files/Teaching_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Full Teaching Statement</a></p>
+    </section>
+
+    <section id="contact">
+      <div class="kicker">Contact</div>
+      <p class="small">Email: <a href="mailto:kiran.modi@unt.edu">kiran.modi@unt.edu</a> &nbsp;•&nbsp; Phone: <a href="tel:+12244102188">+1‑224‑410‑2188</a></p>
+      <p class="small">Address: G. Brint Ryan College of Business, University of North Texas, 1307 W Highland St., Denton, TX 76201</p>
+      <p class="small pill-links"><a href="files/CV-Modi.pdf" target="_blank" rel="noopener">CV (PDF)</a> • <a href="files/Research_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Research Statement</a> • <a href="files/Teaching_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Teaching Statement</a></p>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Kiran Modi · Job Market Site</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
