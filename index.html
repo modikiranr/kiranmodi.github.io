@@ -5,33 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kiran Modi — Ph.D. Candidate in Finance</title>
   <meta name="description" content="Kiran Modi — Ph.D. candidate in Finance at the University of North Texas. Corporate governance, ownership, ESG.">
-  <style>
-    :root { --bg:#0b0c10; --card:#121318; --text:#f2f5f7; --muted:#c9d1d9; --accent:#4ea8de; --border:#1f222a; }
-    * { box-sizing:border-box }
-    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.55 }
-    a { color:#7cc6ff; text-decoration:none } a:hover{ text-decoration:underline }
-    .container{ max-width:980px; margin:0 auto; padding:24px }
-    header{ display:grid; grid-template-columns:140px 1fr; gap:24px; align-items:center; background:var(--card); border:1px solid var(--border); border-radius:16px; padding:20px }
-    header img{ width:140px; height:140px; border-radius:14px; object-fit:cover; border:1px solid var(--border) }
-    h1{ margin:0 0 6px 0; font-size:28px }
-    .tagline{ color:var(--muted); margin-bottom:10px }
-    .chips{ display:flex; flex-wrap:wrap; gap:8px; margin:8px 0 12px }
-    .chip{ padding:6px 10px; background:#0e1116; border:1px solid var(--border); border-radius:999px; font-size:12px; color:var(--muted) }
-    .btn{ display:inline-block; padding:10px 14px; background:var(--accent); color:#001018; border-radius:10px; font-weight:600 }
-    nav{ position:sticky; top:0; backdrop-filter:blur(6px); background:rgba(11,12,16,.6); border-bottom:1px solid var(--border) }
-    nav .container{ display:flex; gap:16px; overflow:auto }
-    nav a{ padding:12px 8px; display:block; color:var(--muted) } nav a:hover{ color:var(--text) }
-    section{ background:var(--card); border:1px solid var(--border); border-radius:16px; padding:20px; margin:18px 0 }
-    section h2{ margin:0 0 6px; font-size:22px }
-    .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:18px }
-    footer{ color:var(--muted); text-align:center; padding:22px 0 }
-    @media (max-width:720px){ header{ grid-template-columns:1fr; text-align:center } header img{ margin:0 auto } .two-col{ grid-template-columns:1fr } }
-    .small{ color:var(--muted); font-size:14px }
-    .pub{ margin-bottom:12px } .pub .title{ font-weight:600 } .pub .meta{ color:var(--muted); font-size:14px }
-    .kicker{ color:var(--accent); font-weight:600; font-size:12px; letter-spacing:.08em; text-transform:uppercase }
-    .list-plain{ list-style:none; padding:0; margin:0 } .list-plain li{ margin:8px 0 }
-    .pill-links a{ display:inline-block; margin-right:10px; margin-bottom:8px; padding:8px 10px; border:1px solid var(--border); border-radius:999px; background:#0e1116 }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container" id="top">
@@ -47,11 +21,13 @@
           <span class="chip">ESG Integration</span>
         </div>
         <div class="actions pill-links">
-          <a class="btn" href="files/CV-Modi.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+          <a class="btn" href="files/CV-Modi.pdf" target="_blank" rel="noopener">Curriculum Vitae </a>
           <a href="files/Research_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Research Statement</a>
           <a href="files/Teaching_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Teaching Statement</a>
-          <a href="mailto:kiran.modi@unt.edu">kiran.modi@unt.edu</a>
-          <a href="tel:+12244102188">+1‑224‑410‑2188</a>
+        </div>
+        <div class="contact-info">
+          <a class="contact-link email" href="mailto:kiran.modi@unt.edu"><span class="icon">📧</span> kiran.modi@unt.edu</a>
+          <a class="contact-link phone" href="tel:+12244102188"><span class="icon">📞</span> +1‑224‑410‑2188</a>
         </div>
       </div>
     </header>
@@ -59,7 +35,7 @@
 
   <nav>
     <div class="container">
-      <a href="#about">About</a><a href="#research">Research</a><a href="#papers">Job Market Paper</a><a href="#wip">Work in Process</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#research">Research</a><a href="#papers">Job Market Paper</a><a href="#wip">Work in Process</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
     </div>
   </nav>
 
@@ -70,15 +46,28 @@
       <p>Kiran Modi is a Ph.D. candidate in Finance at the University of North Texas, specializing in corporate governance, agency conflicts, ownership structure, and ESG integration. Her research examines how institutional ownership and sustainability considerations affect firm value, combining empirical corporate finance with modern data engineering and NLP methods. She has received multiple Best Research Paper Awards and Outstanding Student Awards at UNT. Kiran has taught Introduction to Finance and assisted in graduate and undergraduate finance courses, alongside her active research contributions.</p>
     </section>
 
+    <section id="skills">
+      <div class="kicker">Skills</div>
+      <h2>Technical & Research Skills</h2>
+      <ul class="list-plain">
+        <li><strong>Empirical Methods:</strong> Propensity Score Matching, Difference-in-Differences, Event Study, Panel Data Analysis</li>
+        <li><strong>Programming & Data:</strong> Python (pandas, numpy, scikit-learn), Stata, R, SQL, Excel (advanced), Data Engineering, Automation</li>
+        <li><strong>Text Analysis:</strong> Natural Language Processing (NLP), Large Language Models (LLMs), Contract/Clause Extraction</li>
+        <li><strong>Finance & Research:</strong> ESG Data, Corporate Governance, Institutional Ownership, Financial Databases (CRSP, Compustat, Morningstar Direct, MSCI ESG)</li>
+        <li><strong>Other:</strong> Teaching, Academic Writing, Presentation, Collaboration</li>
+      </ul>
+    </section>
+
     <section id="research">
       <div class="kicker">Research</div>
-      <h2>Interests & Approach</h2>
+      <h2>Research Statement</h2>
+      <p><strong>My research interest is in corporate finance, with a focus on corporate governance, agency conflicts, ownership structure, and how ESG integrates with these broader concepts.</strong> These themes guide all of my work, and you can see them in both my completed and ongoing papers.</p>
       <ul>
-        <li>Corporate governance, ownership, and agency conflicts.</li>
-        <li>ESG integration and investor behavior/firm value.</li>
-        <li>Empirical designs: PSM, DiD, legal shocks.</li>
-        <li>Data engineering & NLP for finance text/contract analysis.</li>
+        <li><strong>Job Market Paper:</strong> Examines the causal effect of ESG ratings on institutional ownership and firm value, using rigorous empirical approaches such as propensity score matching and difference-in-differences to identify the impact of ESG changes on investor behavior and market valuation.</li>
+        <li><strong>Work in Process:</strong> Extends these questions to a global setting, comparing how institutional environments across countries influence the link between ownership, ESG, and firm value. This involves large-scale data collection and automation using Python and Morningstar Direct. Another project, <em>Governance by Contract: Shareholder Agreements and Corporate Control</em>, uses SEC contract data and large language models to study how shareholder agreements and legal shocks shape governance outcomes.</li>
       </ul>
+      <h3>Future Directions</h3>
+      <p>Going forward, my research philosophy is to combine rigorous empirical methods with modern technology to explore important questions in corporate finance. I am guided by curiosity and a commitment to hard work, and I hope to continue producing research that is both empirically sound and contributes to a deeper understanding of corporate behavior.</p>
       <p class="small pill-links"><a href="files/Research_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Full Research Statement</a></p>
     </section>
 
@@ -96,6 +85,7 @@
           <p class="small">This project expands my job market paper to a cross‑country setting. Differences in regulatory environments, enforcement, and market sentiment across countries provide a unique context to examine how the effects of ESG ratings vary internationally. I built an automated Python pipeline to collect and process global ESG‑focused ownership data from Morningstar Direct and integrated it with CRSP Global and MSCI ESG ratings. Preliminary analysis of ESG‑focused mutual fund holdings is complete, and current work examines market reactions to rating changes, with ongoing efforts to refine results and add robustness tests.</p>
         </li>
         <li><strong>Governance by Contract: Shareholder Agreements & Corporate Control</strong> — SEC contract retrieval with LLM clause extraction; outcomes around legal shocks.</li>
+          <p class="small">This project examines how markets perceive shareholder agreements as governance mechanisms. I exploit two opposing exogenous shocks—a Delaware court ruling (Moelis) that invalidated such agreements if not included in the charter, and a subsequent legislative proposal to overturn the ruling—to study market reactions. I have built a data pipeline using the SEC API to collect shareholder agreements, and preliminary event-study analysis is complete. Ongoing work focuses on leveraging a large language model (LLM) to automatically classify the powers granted to shareholders—a approach that allows for scalable and accurate analysis—and refining how market reactions vary based on these contractual rights.</p>
       </ul>
     </section>
 
@@ -107,13 +97,24 @@
         <li>TA experience: FINA 3770, FINA 5170, FINA 4300.</li>
       </ul>
       <p class="small pill-links"><a href="files/Teaching_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Full Teaching Statement</a></p>
+      <h3>Teaching Philosophy & Growth</h3>
+      <p>My teaching philosophy centers on fostering growth mindsets, critical thinking, and real-world application. I strive to create an inclusive, engaging classroom where students are encouraged to ask questions, challenge assumptions, and connect finance concepts to their own experiences. Assessment blends conceptual mastery with practical skills, including case analyses, data exercises, and peer discussion. I am committed to continuous improvement, regularly seeking feedback and reflecting on my teaching to better support student learning and development.</p>
+
+      <h3>Student Comments</h3>
+      <ul class="list-plain small">
+        <li>"The aspects that contributed most was the class session. Attending class helped me understand the topics. If I missed class I would be behind, and not understand the material."</li>
+        <li>"Enthusiastic teacher."</li>
+        <li>"Definitely, so far, I've learned so many things that I can actually use in my life. Some topics were a little bit hard to comprehend, but for the most part I found them stretching my thinking."</li>
+        <li>"This class definitely made me think about finance in a different light. It stretched my thinking on the possibilities that finance offers."</li>
+        <li>"The professor really cares about our learning. She is always trying to get class participation in answering questions. It's just a shame that most students skip class for most of the semester."</li>
+      </ul>
     </section>
 
     <section id="contact">
       <div class="kicker">Contact</div>
       <p class="small">Email: <a href="mailto:kiran.modi@unt.edu">kiran.modi@unt.edu</a> &nbsp;•&nbsp; Phone: <a href="tel:+12244102188">+1‑224‑410‑2188</a></p>
       <p class="small">Address: G. Brint Ryan College of Business, University of North Texas, 1307 W Highland St., Denton, TX 76201</p>
-      <p class="small pill-links"><a href="files/CV-Modi.pdf" target="_blank" rel="noopener">CV (PDF)</a> • <a href="files/Research_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Research Statement</a> • <a href="files/Teaching_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Teaching Statement</a></p>
+      <p class="small pill-links"><a href="files/CV-Modi.pdf" target="_blank" rel="noopener">Curriculum Vitae</a> • <a href="files/Research_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Research Statement</a> • <a href="files/Teaching_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Teaching Statement</a></p>
     </section>
   </main>
 
