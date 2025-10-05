@@ -36,70 +36,33 @@
 
   <nav>
     <div class="container">
-  <a href="#about">About</a><a href="#skills">Skills</a><a href="#research">Research</a><a href="#papers">Job Market Paper</a><a href="#wip">Work in Process</a><a href="#teaching">Teaching</a><a href="#awards">Honors & Awards</a><a href="#contact">Contact</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="hamburger" id="hamburger"></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#papers">Job Market Paper</a>
+        <a href="#wip">Work in Process</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#skills">Skills</a>
+        <a href="#awards">Honors & Awards</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
   </nav>
 
   <main class="container">
-    <section id="awards">
-      <div class="kicker">Honors & Awards</div>
-      <ul class="list-plain">
-        <li>
-          <strong>Best Summer Research Paper Award</strong><br>
-          <span class="small">University of North Texas – FIREL Department | 2022, 2023</span><br>
-          Awarded for producing the best summer research paper among finance Ph.D. students. Recognized originality, methodological rigor, and contribution to the field of corporate finance and ESG research.
-        </li>
-        <li>
-          <strong>Outstanding Student Award</strong><br>
-          <span class="small">Ascend Gala, University of North Texas | 2020–21, 2024–25</span><br>
-          University-level recognition for academic excellence, leadership, and research contributions. Selected from graduate students in the G. Brint Ryan College of Business.
-        </li>
-        <li>
-          <strong>Tuition Benefit Program Award</strong><br>
-          <span class="small">University of North Texas | 2021–2025</span><br>
-          Competitive, multi-year scholarship awarded to Ph.D. students demonstrating strong academic performance and research potential. Covers tuition and provides financial support throughout doctoral studies.
-        </li>
-      </ul>
-    </section>
     <section id="about">
       <div class="kicker">About</div>
-      <h2>Short Bio</h2>
       <p>Kiran Modi is a Ph.D. candidate in Finance at the University of North Texas, specializing in corporate governance, agency conflicts, ownership structure, and ESG integration. Her research examines how institutional ownership and sustainability considerations affect firm value, combining empirical corporate finance with modern data engineering and NLP methods. She has received multiple Best Research Paper Awards and Outstanding Student Awards at UNT. Kiran has taught Introduction to Finance and assisted in graduate and undergraduate finance courses, alongside her active research contributions.</p>
     </section>
-
-    <section id="skills">
-      <div class="kicker">Skills</div>
-      <h2>Technical & Research Skills</h2>
-      <ul class="list-plain">
-        <li><strong>Empirical Methods:</strong> Propensity Score Matching, Difference-in-Differences, Event Study, Panel Data Analysis</li>
-        <li><strong>Programming & Data:</strong> Python (pandas, numpy, scikit-learn), Stata, R, SQL, Excel (advanced), Data Engineering, Automation</li>
-        <li><strong>Text Analysis:</strong> Natural Language Processing (NLP), Large Language Models (LLMs), Contract/Clause Extraction</li>
-        <li><strong>Finance & Research:</strong> ESG Data, Corporate Governance, Institutional Ownership, Financial Databases (CRSP, Compustat, Morningstar Direct, MSCI ESG)</li>
-        <li><strong>Other:</strong> Teaching, Academic Writing, Presentation, Collaboration</li>
-      </ul>
-    </section>
-
-    <section id="research">
-      <div class="kicker">Research</div>
-      <h2>Research Statement</h2>
-      <p><strong>My research interest is in corporate finance, with a focus on corporate governance, agency conflicts, ownership structure, and how ESG integrates with these broader concepts.</strong> These themes guide all of my work, and you can see them in both my completed and ongoing papers.</p>
-      <ul>
-        <li><strong>Job Market Paper:</strong> Examines the causal effect of ESG ratings on institutional ownership and firm value, using rigorous empirical approaches such as propensity score matching and difference-in-differences to identify the impact of ESG changes on investor behavior and market valuation.</li>
-        <li><strong>Work in Process:</strong> Extends these questions to a global setting, comparing how institutional environments across countries influence the link between ownership, ESG, and firm value. This involves large-scale data collection and automation using Python and Morningstar Direct. Another project, <em>Governance by Contract: Shareholder Agreements and Corporate Control</em>, uses SEC contract data and large language models to study how shareholder agreements and legal shocks shape governance outcomes.</li>
-      </ul>
-      <h3>Future Directions</h3>
-      <p>Going forward, my research philosophy is to combine rigorous empirical methods with modern technology to explore important questions in corporate finance. I am guided by curiosity and a commitment to hard work, and I hope to continue producing research that is both empirically sound and contributes to a deeper understanding of corporate behavior.</p>
-      <p class="small pill-links"><a href="files/Research_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Full Research Statement</a></p>
-    </section>
-
     <section id="papers">
       <div class="kicker">Job Market Paper</div>
       <h2>ESG Ratings, Ownership Structure, and Firm Value</h2>
       <p class="small">This paper investigates how changes in firms’ ESG ratings influence institutional ownership and firm valuation. Using rating upgrades and downgrades, threshold‑crossing events tied to index inclusion, and ETF additions and removals, I document that upgrades attract institutional investors and are associated with modest positive abnormal returns, while downgrades—particularly those triggering index exclusions—lead to significant ownership outflows and negative returns. The study employs propensity‑score matching and dynamic difference‑in‑differences designs to establish causal effects, contributing to the literature on ESG, governance, and asset pricing.</p>
-      <p class="small pill-links"><a href="files/CV-Modi.pdf" target="_blank" rel="noopener">See CV for details</a></p>
     </section>
-
-    <section id="wip">
+     <section id="wip">
       <div class="kicker">Work in Process</div>
       <ul>
         <li><strong>ESG Ratings & Ownership Structure and Value: Cross‑Country Evidence</strong> — International extension across regulatory settings.
@@ -109,20 +72,32 @@
           <p class="small">This project examines how markets perceive shareholder agreements as governance mechanisms. I exploit two opposing exogenous shocks—a Delaware court ruling (Moelis) that invalidated such agreements if not included in the charter, and a subsequent legislative proposal to overturn the ruling—to study market reactions. I have built a data pipeline using the SEC API to collect shareholder agreements, and preliminary event-study analysis is complete. Ongoing work focuses on leveraging a large language model (LLM) to automatically classify the powers granted to shareholders—a approach that allows for scalable and accurate analysis—and refining how market reactions vary based on these contractual rights.</p>
       </ul>
     </section>
-
-    <section id="teaching">
+    <section id="research">
+      <div class="kicker">Research Statement</div>
+      <p><strong>My research interest is in corporate finance, with a focus on corporate governance, agency conflicts, ownership structure, and how ESG integrates with these broader concepts.</strong> These themes guide all of my work, and you can see them in both my completed and ongoing papers.</p>
+      <ul>
+        <li><strong>Job Market Paper:</strong> Examines the causal effect of ESG ratings on institutional ownership and firm value, using rigorous empirical approaches such as propensity score matching and difference-in-differences to identify the impact of ESG changes on investor behavior and market valuation.</li>
+        <li><strong>Work in Process:</strong> Extends these questions to a global setting, comparing how institutional environments across countries influence the link between ownership, ESG, and firm value. This involves large-scale data collection and automation using Python and Morningstar Direct. Another project, <em>Governance by Contract: Shareholder Agreements and Corporate Control</em>, uses SEC contract data and large language models to study how shareholder agreements and legal shocks shape governance outcomes.</li>
+      </ul>
+      <h3>Future Directions</h3>
+      <p>Going forward, my research philosophy is to combine rigorous empirical methods with modern technology to explore important questions in corporate finance. I am guided by curiosity and a commitment to hard work, and I hope to continue producing research that is both empirically sound and contributes to a deeper understanding of corporate behavior.</p>
+      <p class="small pill-links"><a href="files/Research_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Full Research Statement</a></p>
+    </section>
+   <section id="teaching">
       <div class="kicker">Teaching</div>
       <h2>Courses</h2>
       <ul>
         <li><strong>Introduction to Finance (FINA 3770)</strong> — Instructor (2024–Present). Teaching evaluation: <strong>3.50 / 5.00</strong>.</li>
-        <li>TA experience: FINA 3770, FINA 5170, FINA 4300.</li>
+        <li><strong>TA, FINA 3770: Introduction to Finance</strong> — Supported course delivery, graded assignments, and assisted students with foundational finance concepts.</li>
+        <li><strong>TA, FINA 5170: Advanced Corporate Finance</strong> — Helped facilitate graduate-level discussions, managed case studies, and provided feedback on projects.</li>
+        <li><strong>TA, FINA 4300: Investment Analysis</strong> — Assisted with investment simulations, supported students in portfolio analysis, and graded coursework.</li>
       </ul>
       <p class="small pill-links"><a href="files/Teaching_Statement%20Kiran%20Modi.pdf" target="_blank" rel="noopener">Full Teaching Statement</a></p>
       <h3>Teaching Philosophy & Growth</h3>
       <p>My teaching philosophy centers on fostering growth mindsets, critical thinking, and real-world application. I strive to create an inclusive, engaging classroom where students are encouraged to ask questions, challenge assumptions, and connect finance concepts to their own experiences. Assessment blends conceptual mastery with practical skills, including case analyses, data exercises, and peer discussion. I am committed to continuous improvement, regularly seeking feedback and reflecting on my teaching to better support student learning and development.</p>
 
       <h3>Student Comments</h3>
-      <ul class="list-plain small">
+      <ul class="small" style="list-style: disc; margin-left: 1.5em;">
         <li>"The aspects that contributed most was the class session. Attending class helped me understand the topics. If I missed class I would be behind, and not understand the material."</li>
         <li>"Enthusiastic teacher."</li>
         <li>"Definitely, so far, I've learned so many things that I can actually use in my life. Some topics were a little bit hard to comprehend, but for the most part I found them stretching my thinking."</li>
@@ -130,6 +105,40 @@
         <li>"The professor really cares about our learning. She is always trying to get class participation in answering questions. It's just a shame that most students skip class for most of the semester."</li>
       </ul>
     </section>
+    
+    <section id="skills">
+      <div class="kicker">Technical & Research Skills</div>
+      <div class="skills-grid">
+        <div class="skill-group"><strong>Empirical Methods</strong><br><span>Propensity Score Matching, Difference-in-Differences, Event Study, Panel Data Analysis</span></div>
+        <div class="skill-group"><strong>Programming & Data</strong><br><span>Python (pandas, numpy, scikit-learn), Stata, R, SQL, Excel (advanced), Data Engineering, Automation</span></div>
+        <div class="skill-group"><strong>Text Analysis</strong><br><span>Natural Language Processing (NLP), Large Language Models (LLMs), Contract/Clause Extraction</span></div>
+        <div class="skill-group"><strong>Finance & Research</strong><br><span>ESG Data, Corporate Governance, Institutional Ownership, Financial Databases (CRSP, Compustat, Morningstar Direct, MSCI ESG)</span></div>
+        <div class="skill-group"><strong>Other</strong><br><span>Teaching, Academic Writing, Presentation, Collaboration</span></div>
+      </div>
+    </section>
+    <section id="awards">
+      <div class="kicker">Honors & Awards</div>
+      <ul style="list-style: disc; margin-left: 1.5em;">
+        <li><strong>Best Summer Research Paper Award</strong><br>
+          <span class="small">University of North Texas – FIREL Department | 2022, 2023</span><br>
+          Awarded for producing the best summer research paper among finance Ph.D. students. Recognized originality, methodological rigor, and contribution to the field of corporate finance and ESG research.
+        </li>
+        <li><strong>Outstanding Student Award</strong><br>
+          <span class="small">Ascend Gala, University of North Texas | 2020–21, 2024–25</span><br>
+          University-level recognition for academic excellence, leadership, and research contributions. Selected from graduate students in the G. Brint Ryan College of Business.
+        </li>
+        <li><strong>Tuition Benefit Program Award</strong><br>
+          <span class="small">University of North Texas | 2021–2025</span><br>
+          Competitive, multi-year scholarship awarded to Ph.D. students demonstrating strong academic performance and research potential. Covers tuition and provides financial support throughout doctoral studies.
+        </li>
+      </ul>
+    </section>
+    
+
+    
+    
+
+    
 
     <section id="contact">
       <div class="kicker">Contact</div>
@@ -140,6 +149,42 @@
   </main>
 
   <footer>© <span id="y"></span> Kiran Modi · Job Market Site</footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // Hamburger menu toggle (robust, after DOM loaded)
+    document.addEventListener('DOMContentLoaded', function() {
+      const navToggle = document.getElementById('nav-toggle');
+      const navLinks = document.getElementById('nav-links');
+      const hamburger = document.getElementById('hamburger');
+      if (!navToggle || !navLinks || !hamburger) {
+        console.error('Nav toggle, nav links, or hamburger not found');
+        return;
+      }
+      navToggle.addEventListener('click', function() {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', !expanded);
+        navLinks.classList.toggle('open');
+        hamburger.classList.toggle('open');
+      });
+      // Optional: close menu on link click (mobile UX)
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 900) {
+            navLinks.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+            hamburger.classList.remove('open');
+          }
+        });
+      });
+      // Auto-close menu and reset hamburger on resize to desktop
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 900) {
+          navLinks.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+          hamburger.classList.remove('open');
+        }
+      });
+    });
+  </script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kiran Modi — Sidebar Layout</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { display: flex; min-height: 100vh; margin: 0; }
+    .sidebar { width: 290px; background: var(--card); color: var(--text); padding: 32px 18px; display: flex; flex-direction: column; align-items: center; border-right: 1.5px solid var(--border); }
+    .sidebar img { width: 120px; height: 120px; border-radius: 14px; margin-bottom: 18px; border: 1px solid var(--border); }
+    .sidebar h1 { font-size: 22px; margin: 0 0 8px 0; }
+    .sidebar .tagline { color: var(--muted); font-size: 15px; margin-bottom: 18px; text-align: center; }
+    .sidebar nav { width: 100%; margin: 18px 0; }
+    .sidebar nav a { display: block; padding: 10px 0; color: var(--muted); font-weight: 500; text-align: center; border-radius: 8px; transition: background .2s, color .2s; }
+    .sidebar nav a:hover, .sidebar nav a.active { background: var(--accent); color: #001018; }
+    .sidebar .contact-info { margin-top: 18px; font-size: 14px; color: var(--muted); text-align: center; }
+    .main-content { flex: 1; padding: 36px 32px; background: var(--bg); min-width: 0; }
+    @media (max-width: 900px) { body { flex-direction: column; } .sidebar { width: 100%; border-right: none; border-bottom: 1.5px solid var(--border); flex-direction: row; justify-content: space-between; align-items: flex-start; } .main-content { padding: 18px 8px; } }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <img src="assets/headshot.jpg" alt="Headshot of Kiran Modi">
+    <h1>Kiran Modi</h1>
+    <div class="tagline">Ph.D. Candidate in Finance<br>University of North Texas</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#research">Research</a>
+      <a href="#papers">Job Market Paper</a>
+      <a href="#wip">Work in Process</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#awards">Honors & Awards</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="contact-info">
+      <div><a href="mailto:kiran.modi@unt.edu">kiran.modi@unt.edu</a></div>
+      <div><a href="tel:+12244102188">+1‑224‑410‑2188</a></div>
+      <div><a href="https://www.linkedin.com/in/kiranmodi/" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+  </aside>
+  <main class="main-content">
+    <!-- ...existing sections: about, skills, research, etc. (copy from your current index.html) ... -->
+    <section id="about"><h2>About</h2><p>...content...</p></section>
+    <section id="skills"><h2>Skills</h2><p>...content...</p></section>
+    <section id="research"><h2>Research</h2><p>...content...</p></section>
+    <section id="papers"><h2>Job Market Paper</h2><p>...content...</p></section>
+    <section id="wip"><h2>Work in Process</h2><p>...content...</p></section>
+    <section id="teaching"><h2>Teaching</h2><p>...content...</p></section>
+    <section id="awards"><h2>Honors & Awards</h2><p>...content...</p></section>
+    <section id="contact"><h2>Contact</h2><p>...content...</p></section>
+  </main>
+</body>
+</html>
